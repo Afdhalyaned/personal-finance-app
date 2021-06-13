@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" >
-    <title>Login</title>
+    <title>Register</title>
   </head>
   <!-- start body -->
   <body class="center">
@@ -25,12 +25,16 @@
               </div>
             </div>
             <!-- end logo -->
-            <!-- start login form -->
+            <!-- start register form -->
             <div class="row">
               <div class="col">
                 <form action="">
-                  <h4 class="text-light mb-3 mx-3">Login</h4>
-                  <!-- username form -->
+                  <h4 class="text-light mb-3 mx-3">Daftar</h4>
+                  <!-- email -->
+                  <div class="mb-3 mx-3">
+                    <input type="email" class="form-control border-0" id="email" name="email" placeholder="email">
+                  </div>
+                  <!-- username -->
                   <div class="mb-3 mx-3">
                     <input type="text" class="form-control border-0" id="username" name="username" placeholder="username">
                   </div>
@@ -38,18 +42,26 @@
                   <div class="mb-3 mx-3">
                     <input type="password" class="form-control border-0" id="password" name="password" placeholder="password">
                   </div>
+                  <!-- re-password -->
+                  <div class="mb-3 mx-3">
+                    <input type="password" class="form-control border-0" id="re-password" name="re-password" placeholder="re-password">
+                  </div>
+                  <!-- term and condition -->
+                  <div class="mb-3 mx-3">
+                    <p class="text-light text-center">Dengan mengklik tombol daftar, anda setuju dengan <a href="#" class="text-light">Syarat Ketentuan</a> dan <a href="#" class="text-light">Kebijakan privacy</a> kami.</p>
+                  </div>
                   <!-- button -->
                   <div class="mb-3 mx-3 d-grid gap-2">
-                    <button type="submit" class="btn text-dark btn-green border-0">Masuk</button>
+                    <button type="submit" class="btn text-dark btn-green border-0">Daftar</button>
                   </div>
                   <!-- link to register -->
                   <div class="mb-3 mx-3">
-                    <p class="text-light text-center">Belum punya akun? <a href="register.html" class="text-light">Daftar</a> disini</p>
+                    <p class="text-light text-center">Belum punya akun? <a href="#" class="text-light">Daftar</a> disini</p>
                   </div>
                 </form>
               </div>
             </div>
-            <!-- end login form -->
+            <!-- end register form -->
           </div>
         </div>
         <div class="col"></div>
