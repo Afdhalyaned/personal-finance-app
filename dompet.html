@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+    <title>Dompet</title>
+  </head>
+  <!-- start body -->
+  <body>
+    <!-- start main-layout -->
+    <div class="main-layout">
+        <!-- start header -->
+        <div class="header common-header fixed-top img-fluid">
+            <div class="image">
+                <img class="img-fluid position-absolute top-50 start-50 translate-middle" src="asset/logo.svg" alt="">
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!-- start page content -->
+        <div class="row">
+            <div class="col">
+                <div class="content text-light mx-3">
+                    <!-- header -->
+                    <div class="row">
+                        <div class="col">
+                            <h2>Dompet</h2>
+                        </div>
+                        <div class="col">
+                            <h2 class="text-end">5.000.000</h2>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category ">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>Cash</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>200.000</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>rekening mandiri</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>326.245</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>rekening bca</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>243.254</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>ovo</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>63.866</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>gopay</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>21.855</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>linkaja</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>0</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- wallet -->
+                    <div class="category">
+                        <div class="row mx-3 mb-1">
+                            <div class="col">
+                                <h5>e-money</h5>
+                            </div>
+                            <div class="col text-end">
+                                <h5>1.432</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main-layout -->
+
+        <!-- start new wallet button -->
+        <div class="d-grid gap-2 fix-bottom-button">
+            <button class="btn btn-green col-10 mx-auto border-0" data-bs-toggle="modal" data-bs-target="#newwallet">Tambah Dompet</button>
+        </div>
+
+        <!-- Modal new wallet-->
+        <div class="modal fade " id="newwallet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-black">
+                    <div class="modal-header border-0">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">Tambah Dompet</h5>
+                    <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <!-- budget -->
+                            <div class="mb-3">
+                                <input required type="text" class="form-control border-0" id="budget" placeholder="Nama dompet">
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="submit" class="btn btn-green col-10 mx-auto border-0">Simpan</button>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- start bottom nav -->
+        <div class="general-bottom-nav-wraper">
+            <nav class="general-bottom-nav">
+                <a href="transaction.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/transaksi.svg" alt="">
+                    </span>
+                    <span>transaksi</span>
+                </a>
+                <a href="budget.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/budget.svg" alt="">
+                    </span>
+                    <span>budget</span>
+                </a>
+                <a href="dompet.html" class="active">
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/dompet-icon.svg" alt="">
+                    </span>
+                    <span>dompet</span>
+                </a>
+                <a href="category.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/category.svg" alt="">
+                    </span>
+                    <span>kategori</span>
+                </a>
+                
+            </nav>
+        </div>
+    <!-- end bottom nav -->
+        
+      
+    </div>
+    <!-- end container -->
+
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+
+  </body>
+  <!-- end body -->
+</html>

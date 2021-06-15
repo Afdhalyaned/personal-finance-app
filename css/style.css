@@ -10,6 +10,34 @@ body {
     background-color: #26488C;
 }
 
+.bg-black {
+    background-color: #0D0D0D;
+}
+
+.bg-blue {
+    background-color: #056CF2;
+}
+
+.border-blue {
+    border-color: #056CF2!important;
+}
+
+.hr-blue {
+    border-top: 2px solid #056CF2;
+}
+
+.hr-yellow {
+    border-top: 2px solid #F2B705;
+}
+
+.border-yellow {
+    border-color: #F2B705!important;
+}
+
+.bg-yellow {
+    background-color: #F2B705;
+}
+
 .main-layout {
     box-shadow: 0 0 48px 0 rgb(0 0 0 / 20%);
     background-color: #0D0D0D;

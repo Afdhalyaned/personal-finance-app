@@ -28,36 +28,38 @@
                 <div class="content ">
                     <!-- transaction list -->
                     <!-- card -->
-                    <div class="card bg-transparent text-light border-0">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col">
-                                    <span>13 Juli 2021</span>
+                    <a  href="" data-bs-toggle="modal" data-bs-target="#edittransaction">
+                        <div class="card bg-transparent text-light border-0">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <span>13 Juli 2021</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <span>The BTS Meal</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <span>The BTS Meal</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="float-end">55.000</span>
+                                    </div>
                                 </div>
-                                <div class="col">
-                                    <span class="float-end">55.000</span>
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="badge border border-warning text-warning">Restaurant</span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="badge bg-transparent float-end border">Cash</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <span class="badge border border-warning text-warning">Restaurant</span>
-                                </div>
-                                <div class="col">
-                                    <span class="badge bg-transparent float-end border">Cash</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <hr>
+                                <div class="row">
+                                    <div class="col">
+                                        <hr>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
+                    </a>
                     <!-- end transaction list -->
                 </div>
             </div>
@@ -66,32 +68,174 @@
 
         <!-- start new transaction button -->
         <div class="d-grid gap-2 fix-bottom-button">
-            <a class="btn btn-green col-10 mx-auto" href="">Tambah Transaksi</a>
+            <button class="btn btn-green col-10 mx-auto border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Transaksi</button>
         </div>
         <!-- end new transaction button -->
+        
+        <!-- Modal Create New-->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-black">
+                    <div class="modal-header border-0">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">Edit Transakti</h5>
+                    <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <!-- date -->
+                            <div class="mb-3">
+                                <input required type="date" class="form-control border-0" id="email" placeholder="tanggal">
+                            </div>
+                            <!-- desc -->
+                            <div class="mb-3">
+                                <input required type="text" class="form-control border-0" id="desc" placeholder="transaksi">
+                            </div>
+                            <!-- pengeluaran/pemasukan -->
+                            <div class="mb-3">
+                                <select required class="form-select border-0" name="root-category" id="root-category">
+                                    <option selected value=" ">pengeluaran</option>
+                                    <option value=" ">pemasukan</option>
+                                </select>
+                            </div>
+                            <!-- kategori -->
+                            <div class="mb-3">
+                                <select required class="form-select border-0" name="category" id="root-category">
+                                    <option selected value="">--- pilih kategori ---</option>
+                                    <option value="">biaya admin</option>
+                                    <option value="">makanan dan minuman</option>
+                                    <option value="">kontrakan</option>
+                                    <option value="">pulsa dan kuota</option>
+                                    <option value="">listrik</option>
+                                    <option value="">sampah</option>
+                                    <option value="">transport</option>
+                                    <option value="">snack</option>
+                                    <option value="">bahan makanan</option>
+                                    <option value="">hiburan</option>
+                                    <option value="">kesehatan</option>
+                                </select>
+                            </div>
+                            <!-- nominal -->
+                            <div class="mb-3">
+                                <input required type="number" class="form-control" id="amount" placeholder="nominal">
+                            </div>
+                            <!-- metode pembayaran -->
+                            <div class="mb-3">
+                                <select required class="form-select border-0" name="category" id="root-category">
+                                    <option selected value="">--- pilih dompet ---</option>
+                                    <option value="">cash</option>
+                                    <option value="">rekening mandiri</option>
+                                    <option value="">rekening BCA</option>
+                                    <option value="">ovo</option>
+                                    <option value="">gopay</option>
+                                    <option value="">linkaja</option>
+                                    <option value="">e-money</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="submit" class="btn btn-green col-10 mx-auto border-0">Simpan</button>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Edit Transaction-->
+        <div class="modal fade " id="edittransaction" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-black">
+                    <div class="modal-header border-0">
+                    <h5 class="modal-title text-light" id="exampleModalLabel">Tambah Transaksi</h5>
+                    <button type="button" class="btn-close border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <!-- date -->
+                            <div class="mb-3">
+                                <input required value="2021-06-13" type="date" class="form-control border-0" id="email" placeholder="tanggal">
+                            </div>
+                            <!-- desc -->
+                            <div class="mb-3">
+                                <input required value="The BTS Meal" type="text" class="form-control border-0" id="desc" placeholder="transaksi">
+                            </div>
+                            <!-- pengeluaran/pemasukan -->
+                            <div class="mb-3">
+                                <select required class="form-select border-0" name="root-category" id="root-category">
+                                    <option selected value=" ">pengeluaran</option>
+                                    <option value=" ">pemasukan</option>
+                                </select>
+                            </div>
+                            <!-- kategori -->
+                            <div class="mb-3">
+                                <select required class="form-select border-0" name="category" id="root-category">
+                                    <option value="">--- pilih kategori ---</option>
+                                    <option value="">biaya admin</option>
+                                    <option selected value="">makanan dan minuman</option>
+                                    <option value="">kontrakan</option>
+                                    <option value="">pulsa dan kuota</option>
+                                    <option value="">listrik</option>
+                                    <option value="">sampah</option>
+                                    <option value="">transport</option>
+                                    <option value="">snack</option>
+                                    <option value="">bahan makanan</option>
+                                    <option value="">hiburan</option>
+                                    <option value="">kesehatan</option>
+                                </select>
+                            </div>
+                            <!-- nominal -->
+                            <div class="mb-3">
+                                <input required value="55000" type="number" class="form-control" id="amount" placeholder="nominal">
+                            </div>
+                            <!-- metode pembayaran -->
+                            <div class="mb-3">
+                                <select required class="form-select border-0" name="category" id="root-category">
+                                    <option  value="">--- pilih dompet ---</option>
+                                    <option selected value="">cash</option>
+                                    <option value="">rekening mandiri</option>
+                                    <option value="">rekening BCA</option>
+                                    <option value="">ovo</option>
+                                    <option value="">gopay</option>
+                                    <option value="">linkaja</option>
+                                    <option value="">e-money</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0">
+                            <button type="submit" class="btn btn-green col-5 mx-auto border-0">Hapus</button>
+                            <button type="submit" class="btn btn-green col-5 mx-auto border-0">Simpan</button>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
 
         <!-- start bottom nav -->
         <div class="general-bottom-nav-wraper">
             <nav class="general-bottom-nav">
-                <a href="" class="active">
+                <!-- transaction -->
+                <a href="transaction.html" class="active">
                     <span class="icon">
                         <img class="img-fluid" src="asset/transaksi.svg" alt="">
                     </span>
                     <span>transaksi</span>
                 </a>
-                <a href="" >
+                <!-- budget -->
+                <a href="budget.html" >
                     <span class="icon">
                         <img class="img-fluid" src="asset/budget.svg" alt="">
                     </span>
                     <span>budget</span>
                 </a>
-                <a href="" >
+                <!-- wallet -->
+                <a href="dompet.html" >
                     <span class="icon">
                         <img class="img-fluid" src="asset/dompet-icon.svg" alt="">
                     </span>
                     <span>dompet</span>
                 </a>
-                <a href="" >
+                <!-- kategori -->
+                <a href="category.html" >
                     <span class="icon">
                         <img class="img-fluid" src="asset/category.svg" alt="">
                     </span>
@@ -100,7 +244,7 @@
                 
             </nav>
         </div>
-    <!-- end bottom nav -->
+        <!-- end bottom nav -->
         
       
     </div>
