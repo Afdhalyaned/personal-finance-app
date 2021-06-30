@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+    <title>Kolaborator</title>
+  </head>
+  <!-- start body -->
+  <body>
+    <!-- start main-layout -->
+    <div class="main-layout">
+        <!-- start header -->
+        <div class="header common-header fixed-top img-fluid">
+            <div class="menu-toggle ms-3">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="image">
+                <img class="img-fluid position-absolute top-50 start-50 translate-middle" src="asset/logo.svg" alt="">
+            </div>
+            <ul>
+                <li class="mt-5 btn text-start"><a href="profile.html" class="text-light">Profil</a></li>
+                <li class="btn text-start"><a href="kolaborator.html" class="text-light">Kolaborator</a></li>
+                <li class="btn text-start "><a href="login.html" class="text-light">Logout</a></li>
+            </ul>
+            
+        </div>
+        <!-- end header -->
+
+        <!-- start page content -->
+        <div class="row">
+            <div class="col">
+                <div class="content text-light mx-3">
+                    <!-- header -->
+                    <div class="row mt-3">
+                        <div class="col">
+                            <h2 class="text-center">Kolaborator</h2>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <!-- start collaborator form -->
+                            <div class="row">
+                                <div class="col">
+                                    <form action="#">
+                                        <!-- email -->
+                                        <div class="mb-3 mx-3">
+                                        <input type="email" class="form-control border-0" id="email" name="email" placeholder="user@email">
+                                        </div>
+                                        <!-- button -->
+                                        <div class="mb-3 mx-3 d-grid gap-2">
+                                        <button type="submit" class="btn text-dark btn-green border-0">Tambah Kolaborator</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- end collaborator form -->
+                            <!-- existing collaborator -->
+                            <div class="row">
+                                <div class="col">
+                                    <!-- collaborator email -->
+                                    <div class="row mx-3">
+                                        <div class="col-sm-10">
+                                            <div class="mb-3">
+                                            <input type="email" class="form-control border-0" id="email" name="email" placeholder="user@email" value="user1@email.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="mb-3 d-grid">
+                                            <button type="submit" class="btn text-dark btn-green border-0">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- collaborator email -->
+                                    <div class="row mx-3">
+                                        <div class="col-sm-10">
+                                            <div class="mb-3">
+                                            <input type="email" class="form-control border-0" id="email" name="email" placeholder="user@email" value="user2@email.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="mb-3 d-grid">
+                                            <button type="submit" class="btn text-dark btn-green border-0">-</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end existing collaborator -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main-layout -->
+        
+        <!-- start bottom nav -->
+        <div class="general-bottom-nav-wraper">
+            <nav class="general-bottom-nav">
+                <a href="transaction.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/transaksi.svg" alt="">
+                    </span>
+                    <span>transaksi</span>
+                </a>
+                <a href="budget.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/budget.svg" alt="">
+                    </span>
+                    <span>budget</span>
+                </a>
+                <a href="dompet.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/dompet-icon.svg" alt="">
+                    </span>
+                    <span>dompet</span>
+                </a>
+                <a href="category.html" >
+                    <span class="icon">
+                        <img class="img-fluid" src="asset/category.svg" alt="">
+                    </span>
+                    <span>kategori</span>
+                </a>
+                
+            </nav>
+        </div>
+    <!-- end bottom nav -->
+        
+      
+    </div>
+    <!-- end container -->
+
+    
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+  <!-- end body -->
+</html>
